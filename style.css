@@ -1,0 +1,82 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  font-family:fantasy;
+  line-height:45px;
+}
+
+.container {
+  margin-top:40px;
+}
+
+.con-play {
+  color:#000;
+  margin-right:70px;
+  float:right;
+  font-size:55px;
+}
+
+.con-link {
+  font-size:55px;
+  color:#000;
+  margin-left:70px;
+  height:50vh;
+}
+
+.con-play:hover {
+  color:rgba(0,0,0,.5);
+  margin-right:70px;
+  float:right;
+  font-size:55px;
+}
+
+.con-link:hover {
+  color:rgba(0,0,0,.5);
+  margin-left:70px;
+  font-size:55px;
+}
+
+
+.con-style {
+  height:640px;
+  background:#fff;
+  width:900px;
+  border-radius:3px;
+  box-shadow:0px 4px 50px 1px rgba(6, 7, 78, .2);
+  border:3px solid #e1e1e1;
+  margin:1px auto;
+  display:block;
+  border-radius:15px;
+  transition: .5s;
+}
+
+.thum-img {
+  width:100%;
+  height:78%;
+  display:block;
+  text-align:center;
+  border-radius:12px 12px 0px 0px;
+}
+
+.navBar {
+  box-shadow:0px 6px 12px rgba(0,0,0,.3);
+  background:#fff;
+  height:130px;
+  width:100%;
+  position:fixed;
+}
+.title-bar {
+  font-size:80px;
+  font-family:fantasy;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:7vh;
+}
+
+.link-btn {
+  margin-top:47px;
+}
