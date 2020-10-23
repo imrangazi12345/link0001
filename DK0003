@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Download & Play Links</title>
+<style type="text/css">
+*{
+  padding:0;
+  margin:0;
+}
+body {
+  background:#f0f0f0;
+  line-height:45px;
+  font-family:fantasy;
+}
+
+.navBar {
+  box-shadow:0px 6px 12px rgba(0,0,0,.3);
+  background:#fff;
+  height:130px;
+  width:100%;
+  position:fixed;
+}
+.title-bar {
+  font-size:80px;
+  font-family:fantasy;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:7vh;
+}
+
+.videoICON {
+  width:200px;
+  height:200px;
+  float:left;
+  
+}
+.video {
+  margin:16px;
+  min-height:200px;
+  min-width:95%;
+  float:left;
+  padding:25px;
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0px 6px 65px rgba(0,0,0,.2);
+}
+.videoTITEL {
+  font-size:50px;
+  line-height:70px;
+}
+.innerDiv {
+  margin-left:30px;
+  height:10px;
+  width:690px;
+  float:left;
+}
+
+.videoPLAY {
+  text-decoration:none;
+  color:#fff;
+  background:red;
+  font-size:50px;
+  margin-left:7%;
+  float:left;
+  margin-top:3%;
+  border-radius:10px;
+  padding:30px 320px 30px 320px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  float:left;
+}
+.download {
+  margin-top:500px;
+  margin-left:30px;
+}
+.boldTit {
+  margin-top:vh;
+  font-size:60px;
+}
+.gameList {
+  font-size:60px;
+  margin-top:100px;
+}
+.gameDwn {
+  padding:30px 250px 30px 250px;
+  text-decoration:none;
+  background:#46bbff;
+  font-size:50px;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  color:#fff;
+}
+.gameNem {
+  background:#fff;
+  border-radius:20px;
+  padding:30px 60px 30px 0px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.3);
+  line-height:200px;
+}
+#alertBox {
+  border:2px solid #000;
+  margin-top:20%;
+  font-size:50px;
+  padding:40px 120px 40px 120px;
+  margin-left:25%;
+  float:left;
+  border-radius:30px;
+  color:#48c677;
+  box-shadow:0px 0px 40px #000;
+  position:fixed;
+}
+#copyID {
+  display:none;
+}
+#copyAlert {
+  padding:50px;
+  left:18%;
+  top:10%;
+  background: #fff;
+  color:green;
+  border-radius:20px;
+  font-size:80px;
+  position:fixed;
+  box-shadow:2px 5px 40px rgba(0,0,0,.4);
+  display:none;
+  border:4px solid #3bda52;
+}
+</style>
+</head>
+<body>
+   
+  <div class="navBar" >
+    <label class="title-bar" >Darkquad</label>
+  </div>
+   
+
+  <div style="height:150px;" ></div>
+
+      <!-- download Link -->
+<div class="video" >
+  <img class="videoICON"  src="https://1.bp.blogspot.com/-JPRZqWVSWlQ/X3xu3vHVRHI/AAAAAAAAA0w/MmDhG6LYh1kIR-w0YD5VoT3xzFoki0oMgCLcBGAsYHQ/s1280/20201006_184603.png" >
+  <div class="innerDiv" >
+    <p class="videoTITEL" >
+      TOP 10 BEST ANDROID GAMES || HIGH GRAPHICS GAME (ONLINE/OFFLINE)
+    </p>
+  </div>
+</div>
+    
+
+    <!-- YouTube video button -->
+    
+ <a href="https://youtu.be/rMgeSLgiw8M" class="videoPLAY" >Play Now</a><br>
+  <center>
+       <!--- vidéo Link -->
+ <div class="download"  ><br>
+ <b class="boldTit">Download Links</b>
+
+
+      <!-- Contnears -->
+      
+      
+      
+      
+      
+      
+   
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    1. Impossible Tricks 2019
+  </div>
+  <div>
+    <a onclick="functionNo1()" class="gameDwn">
+      Copy Link 
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    2. Gloomy Dungeons 2
+  </div>
+  <div>
+    <a onclick="functionNo2()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    3. Shine Runner Free
+  </div>
+  <div>
+    <a onclick="functionNo3()" class="gameDwn">
+      copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    4. Faily Tumbler
+  </div>
+  <div>
+    <a onclick="functionNo4()"  class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    5. Turboprop Flight Sim ...
+  </div>
+  <div>
+    <a onclick="functionNo5()" class="gameDwn">
+      copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    6. Really Racer EVO
+  </div>
+  <div>
+    <a onclick="functionNo6()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    7. Grand Crime Gangste ...
+  </div>
+  <div>
+    <a onclick="functionNo7()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    8. Psebay: Gravity ...
+  </div>
+  <div>
+    <a onclick="functionNo8()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    9. Horizon
+  </div>
+  <div>
+    <a onclick="functionNo9()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+<div class="gameList" >
+  <div class="gameNem" >&nbsp;&nbsp;
+    10. Jurassic Survival Island 2
+  </div>
+  <div>
+    <a onclick="functionNo10()" class="gameDwn">
+      Copy Link
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="copyAlert" > Link Is Copied</div>
+<div>
+ <input id="copyID" value="" ></input>
+</div>
+<script type="text/javascript">
+var link_1= "https://play.google.com/store/apps/details?id=com.milliongamesnew.impossiabletracks2019";
+var link_2= "https://play.google.com/store/apps/details?id=com.infomultiverse.flabs2";
+var link_3= "https://play.google.com/store/apps/details?id=com.vectorunit.greenfree";
+var link_4= "https://play.google.com/store/apps/details?id=com.spungegames.failytumbler";
+var link_5= "https://play.google.com/store/apps/details?id=com.AXgamesoft.TurbopropFS";
+var link_6= "https://play.google.com/store/apps/details?id=com.vodigitalarts.rallyracerevo";
+var link_7= "https://play.google.com/store/apps/details?id=com.HGames.GrandCrime";
+var link_8= "https://play.google.com/store/apps/details?id=com.butakov.psebay";
+var link_9= "https://play.google.com/store/apps/details?id=com.ketchapp.horizon";
+var link_10= "https://play.google.com/store/apps/details?id=com.gamefirst.Jurassic.Survival.Island.ARK2";
+
+
+
+
+
+
+
+var alertBox=document.getElementById("copyAlert");
+
+function functionNo1(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_1);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+
+function functionNo2(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_2);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo3(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_3);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo4(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_4);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo5(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_5);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo6(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_6);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo7(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_7);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo8(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_8);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo9(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_9);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+function functionNo10(){
+var copyIdDiv=document.getElementById("copyID");
+copyIdDiv.style.display="block";
+copyIdDiv.setAttribute("value",link_10);
+copyIdDiv.select();
+copyIdDiv.setSelectionRange(0, 99999);
+document.execCommand("copy");
+copyIdDiv.style.display="none";
+alertBox.style.display="block";
+setTimeout(()=>{alertBox.style.display="none";},2000)
+}
+
+
+</script>
+ </div>
+ </center>
+   <div style="height:200px;" ></div>
+</body>
+</html>
