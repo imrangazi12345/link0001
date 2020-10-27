@@ -33,6 +33,7 @@ body {
   width:200px;
   height:200px;
   float:left;
+  
 }
 .video {
   margin:16px;
@@ -62,7 +63,7 @@ body {
   font-size:50px;
   margin-left:7%;
   float:left;
-  margin-top:3%;
+  margin-top:5%;
   border-radius:10px;
   padding:30px 320px 30px 320px;
   box-shadow:0px 6px 12px rgba(0,0,0,.5);
@@ -80,14 +81,24 @@ body {
   font-size:60px;
   margin-top:100px;
 }
-.gameDwn {
-  padding:30px 150px 30px 150px;
+.downloadBTN {
+  padding:30px 250px 30px 250px;
   text-decoration:none;
   background:#46bbff;
   font-size:50px;
   border-radius:10px;
   box-shadow:0px 6px 12px rgba(0,0,0,.5);
   color:#fff;
+  margin-left:200px;
+  text-decoration:none;
+  color:#fff;
+  font-size:50px;
+  margin-left:7%;
+  float:left;
+  margin-top:5%;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  float:left;
 }
 .gameNem {
   background:#fff;
@@ -108,7 +119,86 @@ body {
   box-shadow:0px 0px 40px #000;
   position:fixed;
 }
+#copyID {
+  display:none;
+}
+#copyAlert {
+  background:red;
+  padding:50px;
+  left:18%;
+  top:10%;
+  background:#f9f9f9;
+  color:green;
+  border-radius:20px;
+  font-size:80px;
+  position:fixed;
+  box-shadow:2px 5px 40px rgba(0,0,0,.4);
+  display:none;
+  border:4px solid #3bda52;
+}
 
+#ID {
+  height:105px;
+  width:865px;
+  text-decoration:none;
+  background:#fff;
+  font-size:50px;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  color:#fff;
+  margin-left:200px;
+  text-decoration:none;
+  color:#fff;
+  font-size:50px;
+  margin-left:7%;
+  float:left;
+  margin-top:5%;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  float:left;
+  display:none;
+}
+.aniID {
+  height:100%;
+  width:50%;
+  background:#46bbff;
+  animation:downloadAnimation 70s linear infinite;
+}
+
+@keyframes downloadAnimation{
+  0%{
+    width:0px;
+  }
+  100%{
+    width:100%;
+  }
+}
+.myImg {
+  width:90%;
+  margin-top:150px;
+  border-radius:5px;
+  box-shadow:12px 12px 50px rgba(0,0,0,.3);
+}
+#openID {
+  height:50px;
+  width:360px;
+  text-decoration:none;
+  background:#46bbff;
+  font-size:50px;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  color:#fff;
+  text-decoration:none;
+  color:#fff;
+  font-size:50px;
+  margin-left:7%;
+  float:left;
+  margin-top:5%;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  float:left;
+  display:none;
+}
 </style>
 </head>
 <body>
@@ -122,43 +212,70 @@ body {
 
       <!-- download Link -->
 <div class="video" >
-  <img class="videoICON"  src="https://1.bp.blogspot.com/-JPRZqWVSWlQ/X3xu3vHVRHI/AAAAAAAAA0w/MmDhG6LYh1kIR-w0YD5VoT3xzFoki0oMgCLcBGAsYHQ/s1280/20201006_184603.png" >
+  <img class="videoICON"  src="" >
   <div class="innerDiv" >
-    <p class="videoTITEL" >Offline Game Like Pubg Mobile And Free Fire
+    <p class="videoTITEL" >
+     Game For Android || Darkquad
     </p>
   </div>
 </div>
-    
 
     <!-- YouTube video button -->
     
  <a href="https://youtu.be/BKtEOgWjCcw" class="videoPLAY" >Play Now</a><br>
-  <center>
-       <!--- vidéo Link -->
- <div class="download"  ><br>
- <b class="boldTit">Download Links</b>
-
-
-      <!-- Contnears -->
-      
-      
-      
-      
-<div class="gameList" >
-  <div class="gameNem" >&nbsp;&nbsp;
-    Battlegrounds Survivor
-  </div>
-  <div>
-    <a href="WhatsApp://send?text=Offline Free Fire - https://youtu.be/BKtEOgWjCcw ,Game Download Link - https://play.google.com/store/apps/details?id=com.BatonGames.BattlegroundSurvivor" class="gameDwn">
-      Share & Get Link
-    </a>
-  </div>
-</div>
-      
-
-
+ <div id="downloadBTN" class="downloadBTN" >
+   <a id="dwnAniID">
+     Download Now
+   </a>
  </div>
- </center>
-   <div style="height:200px;" ></div>
+ 
+ <div class="" id="ID" >
+   <div class="blank" id="blank" >
+     
+   </div>
+ </div>
+<center>
+ <a href="#"  id="openF" >
+   <div class="downloadBTN" id="openID">
+     Open
+   </div>
+ </a>
+</center>
+ <!---
+ <div class="myDiv" >
+   <center>
+   <img class="myImg"  src="/storage/emulated/0/pixelLab/al.jpg" >
+   </center>
+ </div>
+ --->
+ 
+<script type="text/javascript">
+var myLink;
+
+myLink="https://play.google.com/store/apps/details?id=com.BatonGames.BattlegroundSurvivor"
+
+
+
+var aniID=document.getElementById("ID");
+var mainID =document.getElementById("downloadBTN");
+var blank=document.getElementById("blank");
+var open=document.getElementById("openID");
+var openF=document.getElementById("openF");
+
+mainID.addEventListener("click",()=>{
+  mainID.style.display="none";
+  aniID.style.display="block";
+  blank.setAttribute("class","aniID");
+  setInterval(myFunction,70000);
+  openF.setAttribute("href",myLink)
+});
+function myFunction(){
+  openID.style.display="block";
+  aniID.style.display="none";
+  
+}
+
+</script>
+
 </body>
 </html>
