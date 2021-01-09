@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Download & Play Links</title>
+<style type="text/css">
+*{
+  padding:0;
+  margin:0;
+}
+body {
+  background:#f0f0f0;
+  line -height:45px;
+  font-family:fantasy;
+}
+
+.navBar {
+   box-shadow: 0px 0px 62px rgba(22, 26, 55, .4);
+  background:#fff;
+  height:130px;
+  width:100%;
+  position:fixed;
+}
+.title-bar {
+  font-size:80px;
+  font-family:fantasy;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:7vh;
+}
+
+.download {
+  margin-top:50px;
+  margin-left:30px;
+}
+.boldTit {
+  font-size:60px;
+}
+.gameList {
+  font-size:60px;
+  margin-top:100px;
+}
+.ios {
+  padding:30px 200px 30px 200px;
+  text-decoration:none;
+  background:#46bbff;
+  font-size:50px;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  color:#fff;
+}
+.android{
+  padding:30px 170px 30px 170px;
+  text-decoration:none;
+  background:#46bbff;
+  font-size:50px;
+  border-radius:10px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.5);
+  color:#fff;
+}
+.gameNem {
+  background:#fff;
+  border-radius:20px;
+  padding:30px 60px 30px 0px;
+  box-shadow:0px 6px 12px rgba(0,0,0,.3);
+  line-height:200px;
+}
+    .ads-box{
+      width: 900px;
+      height: 1050px;
+      background: #f3f3f3;
+      margin: 40px;
+      margin-top: 100px;
+    }
+  .ads-box-2{
+  width: 900px;
+  height: 1050px;
+  background: #f3f3f3;
+  margin: 35px;
+  margin-top: 100px;
+  }
+    .ads-lebel{
+      font-size: 11px;
+      background:#f0f0f0;
+      color: #178EEB;
+      padding: 9px;
+      margin-right: 92%;
+      font-size: 30px;
+    }
+    #header{
+      height: 120px;
+      box-shadow: 0px 1px 26px rgba(42,44,5,.5);
+      font-size: 75px;
+      padding-top: 20px;
+      border-bottom: 1px solid #9D9DA1;
+      width :100%;
+      background:#fff;
+    }
+#xloading{
+  margin-top:24%;
+  margin-left:43%;
+  margin-bottom:20.5%;
+  height:80px;
+  width:80px;
+  background:#f0f0f0;
+  border-radius:100px;
+  border:9px solid #000;
+  border-bottom-color:#ffb700;
+  border-left-color:#ffb700;
+  border-top-color:#ffb700;
+  border-right-color:#f0f0f0;
+  animation:loadAnimation .6s linear infinite;
+  z-index:99999;
+}
+@keyframes loadAnimation{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+</style>
+
+
+
+</head>
+<body>
+  <center>
+     <div id="header">
+       Darkquad Games
+     </div>
+  </center>
+  
+  
+  <div id="spner">
+     <div id="xloading"></div>
+  </div>
+  
+  
+  <div id="all">
+    <div class="ads-box" id="ads-box"></div>
+    <center>
+      <div class="download"  ><br>
+        <b class="boldTit">
+          Download Links
+        </b>
+      </div>
+    </center>
+
+    <div id="comp_box"></div>
+    <div class="ads-box" id="ads-box-3"></div>
+  </div>
+   
+   
+   
+
+
+
+<script>
+
+
+
+
+
+
+var game =[
+{
+no:1,
+type:'Android',
+name:'Rally Point 4',
+link:'https://play.google.com/store/apps/details?id=com.xformgames.rallypoint4'
+},
+{
+no:2,
+type:'Android',
+name:'I am Legion',
+link:'https://play.google.com/store/apps/details?id=com.edgaryanichev.ial'
+},
+{
+no:3,
+type:'Android',
+name:'Hopeless 3:',
+link:'https://play.google.com/store/apps/details?id=com.upopa.hopeless3xu0026hl=en'
+},
+{
+no:4,
+type:'Android',
+name:'The Pit',
+link:'https://play.google.com/store/apps/details?id=com.ketchapp.thepit'
+},
+{
+no:5,
+type:'Android',
+name:'Broken Dawn II',
+link:'https://play.google.com/store/apps/details?id=com.dawn.plus.gpxu0026hl=en'
+},
+{
+no:6,
+type:'Android',
+name:'Mekorama',
+link:'https://play.google.com/store/apps/details?id=com.martinmagni.mekorama'
+},
+{
+no:7,
+type:'Android',
+name:'Grand Crime Gangsta...',
+link:'https://play.google.com/store/apps/details?id=com.HGames.GrandCrime'
+},
+{
+no:8,
+type:'Android',
+name:'Kingdom Wars',
+link:'https://play.google.com/store/apps/details?id=com.spcomes.stormdefense'
+},
+{
+no:9,
+type:'Android',
+name:'Moto Delight',
+link:'https://play.google.com/store/apps/details?id=com.BrainOverload.MotoDelight'
+},
+{
+no:10,
+type:'Android',
+name:'PAKO Forever',
+link:'https://play.google.com/store/apps/details?id=com.treemengames.pakoforever'
+},
+{
+no:11,
+type:'Android',
+name:'Fight Club',
+link:'https://play.google.com/store/apps/details?id=com.integergames.fightclub'
+},
+{
+no:12,
+type:'Android',
+name:'Pigeons Attack',
+link:'https://play.google.com/store/apps/details?id=com.NixtorGameStudio.PigeonsAttack'
+},
+{
+no:13,
+type:'Android',
+name:'One Level 2',
+link:'https://play.google.com/store/apps/details?id=com.RTU.OneLevelTwo'
+},
+{
+no:14,
+type:'Android',
+name:'N.O.V.A. Legacy',
+link:'https://play.google.com/store/apps/details?id=com.gameloft.android.ANMP.GloftNOHM'
+},
+{
+no:15,
+type:'Android',
+name:'A Way To Slay',
+link:'https://play.google.com/store/apps/details?id=com.lalapp.waytoslay'
+},
+{
+no:16,
+type:'Android',
+name:'Police Car Chase',
+link:'https://play.google.com/store/apps/details?id=com.pickle.PoliceCarPullOver'
+},
+{
+no:17,
+type:'Android',
+name:'King Of Soccer',
+link:'https://play.google.com/store/apps/details?id=com.dreamytyper.kingOfSoccer'
+}
+]
+
+
+
+
+
+try{
+var random1 =parseInt(Math.random() * 10);
+var random2 =parseInt(Math.random() * 10);
+var random3 =parseInt(Math.random() * 10);
+var random4 =parseInt(Math.random() * 10);
+
+for(i=0;i<20;i++){
+if(random1 == random2){
+  random1--;
+};
+if(random3 == random2){
+random2--;
+};
+if(random1 == random3){
+random3--;
+};
+if(random4 == random1){
+random4--;
+};
+if(random4 == random2){
+random3--;
+};
+if(random4 == random3){
+random4--;
+};
+}
+
+
+
+function showAds(randerId,objIndex){
+var index=objIndex;
+
+const adsBox = document.getElementById(randerId);
+
+const div = document.createElement('div');
+div.className='ads-lebel';
+div.id='ads-lebel'+index;
+adsBox.appendChild(div);
+
+var myLebel = document.getElementById('ads-lebel'+index)
+myLebel.innerText ='Ads'
+
+adsBox.style.background='url('+'"'+ads[index].src+'"'+')no-repeat'
+
+adsBox.addEventListener('click',()=>{
+   window.open(ads[index].url)
+});
+console.log(index);
+}
+
+var ads =[
+{
+src:'https://1.bp.blogspot.com/-SrsLsvjgOnw/X_afBfItq1I/AAAAAAAAA-I/adhA-U8qpEUJJkazp44fgqJR0eA9_ubVQCLcBGAsYHQ/s1030/0.jpg',
+url:'https://ekaro.in/enkr20210106s289660'
+},
+{
+src:'https://1.bp.blogspot.com/--fERX2Nlf6s/X_afsMvOHMI/AAAAAAAAA_Y/KF5GeaFElVMrLQQrzeiAWlVMRaHlWlnAACLcBGAsYHQ/s1030/1.jpg',
+url:'https://ekaro.in/enkr20210106s289827'
+},
+{
+src:'https://1.bp.blogspot.com/-1fBDZ-lEdD4/X_afpTFA80I/AAAAAAAAA_Q/c13rVmYo0I89ESdFZaRd7g3Z3M3jYMhBgCLcBGAsYHQ/s1030/2.jpg',
+url:'https://ekaro.in/enkr20210106s289860'
+},
+{
+src:'https://1.bp.blogspot.com/--CPrYzNonVU/X_afmqDGo6I/AAAAAAAAA_I/4_xt6KiPCQY9iblBMJ1qUBJKHBsiKmDzwCLcBGAsYHQ/s1030/3.jpg',
+url:'https://ekaro.in/enkr20210106s289925'
+},
+{
+src:'https://1.bp.blogspot.com/-K-9UxEwKeQk/X_afD28PI3I/AAAAAAAAA-M/tHfPPJbO3w4Y7chrNN2M5ftmYDE3fjDgQCLcBGAsYHQ/s1030/4.jpg',
+url:'https://ekaro.in/enkr20210106s290102'
+},
+{
+  src:'https://1.bp.blogspot.com/-x97223MAyBo/X_afkOLqyrI/AAAAAAAAA_E/Kt_mQDSA7Yc-evp-2h-z5U1g83hd_KX1QCLcBGAsYHQ/s1030/5.jpg',
+  url:'https://ekaro.in/enkr20210106s289937'
+},
+{
+  src:'https://1.bp.blogspot.com/-auqBmlJJrx4/X_afhYsd6bI/AAAAAAAAA-4/Q3SkLBVli2AXfnSqFLAHImzzrQ3yUGITACLcBGAsYHQ/s1030/6.jpg',
+  url:'https://ekaro.in/enkr20210106s289950'
+},
+{
+  src:'https://1.bp.blogspot.com/-4zsf5883uQU/X_afetHHQHI/AAAAAAAAA-0/WqCbcNT6WmAC5qPLfwjx6UNtMOvdeqtbACLcBGAsYHQ/s1030/7.jpg',
+  url:'https://ekaro.in/enkr20210106s289963'
+},
+{
+  src:'https://1.bp.blogspot.com/-xfgE0CvdCQw/X_afbm4t7xI/AAAAAAAAA-w/hdqPgCGurb04z9CV8-E9owNy0JNjvHQsQCLcBGAsYHQ/s1030/8.jpg',
+  url:'https://ekaro.in/enkr20210106s289976'
+},
+{
+  src:'https://1.bp.blogspot.com/-468VNM8U_v4/X_afYHGwcWI/AAAAAAAAA-o/i3FTQeJL09cqA9xCGyR7BMOuUpiGiYFsACLcBGAsYHQ/s1030/9.jpg',
+  url:'https://ekaro.in/enkr20210106s289988'
+},
+{
+  src:'https://1.bp.blogspot.com/-7zwgk2ueIHs/X_afUjRIMKI/AAAAAAAAA-k/0BiCtVo-TFkPX2mztkAyqibRbmgQlwBhwCLcBGAsYHQ/s1030/10.jpg',
+  url:'https://ekaro.in/enkr20210106s290002'
+},
+{
+  src:'https://1.bp.blogspot.com/-S5omC331Y44/X_afSLBbnWI/AAAAAAAAA-g/sNmvw9pjRjsBb16ExZJAK6tWXo9_KJuuwCLcBGAsYHQ/s1030/11.jpg',
+  url:'https://ekaro.in/enkr20210106s290024'
+},
+{
+src:'https://1.bp.blogspot.com/-9yYwaT5FNzs/X_afOpgpF0I/AAAAAAAAA-Y/ygyeOWAzfKIP4VAgALQTqf_Hl9LjwGfRgCLcBGAsYHQ/s1030/12.jpg',
+url:'https://ekaro.in/enkr20210106s290035'
+},
+{
+src:'https://1.bp.blogspot.com/-mXeLR1yd8xg/X_afKloTuaI/AAAAAAAAA-U/w1a58wJ6nFAew5E1lA8nEOuWSOWIMLD6ACLcBGAsYHQ/s1030/13.jpg',
+url:'https://ekaro.in/enkr20210106s290047'
+},
+{
+src:'https://1.bp.blogspot.com/-AIb-Wye7rYs/X_afGg_HArI/AAAAAAAAA-Q/Yi1iWnIb-owCIDIA3UtWOEp5iNLZ4KdeQCLcBGAsYHQ/s1030/14.jpg',
+url:'https://ekaro.in/enkr20210106s290063'
+}
+
+];
+
+game.map((val,ind)=>{
+  const id = document.getElementById('comp_box');
+  
+  let xdiv = document.createElement('div');
+  xdiv.id = 'contentId_'+ind++;
+  id.appendChild(xdiv);
+  
+  
+  function typeCheck(){
+    if(val.type=='iOS'){
+      return 'ios';
+    }else{
+      return 'android';
+    }
+  }
+  
+  if (val.type==''){
+    val.type='Open';
+  }
+  
+  var content = `<center><div class="gameList"><div class="gameNem">&nbsp;&nbsp;${val.no}. ${val.name}</div><div><a href="${val.link}" class="${typeCheck()}">${val.type} Link</a></div></div><div class"adBox_"${ind}></div></center>`;
+  xdiv.innerHTML=content;
+  if(ind == 4){
+    var aDiv=document.createElement('div');
+    aDiv.id = 'ads-box-2';
+    aDiv.className='ads-box-2';
+    xdiv.appendChild(aDiv);
+    showAds('ads-box-2',random2);
+    
+  }
+  if(ind == 8){
+    var aDiv4=document.createElement('div');
+    aDiv4.id = 'ads-box-4';
+    aDiv4.className='ads-box';
+    xdiv.appendChild(aDiv4);
+    showAds('ads-box-4',random4);
+    
+  }
+  if(ind == 13){
+    var aDiv5=document.createElement('div');
+    aDiv5.id = 'ads-box-5';
+    aDiv5.className='ads-box';
+    xdiv.appendChild(aDiv5);
+    showAds('ads-box-5',10);
+  }
+  if(18<=game.length){
+    if(ind == 18){
+    var aDiv6=document.createElement('div');
+    aDiv6.id = 'ads-box-6';
+    aDiv6.className='ads-box';
+    xdiv.appendChild(aDiv6);
+    showAds('ads-box-6',11);
+    }
+  }
+  if(25<=game.length){
+    if(ind == 24){
+    var aDiv7=document.createElement('div');
+    aDiv7.id = 'ads-box-7';
+    aDiv7.className='ads-box';
+    xdiv.appendChild(aDiv7);
+    showAds('ads-box-7',12);
+    }
+  }
+});
+
+}
+catch(error){
+  location.reload();
+  
+}
+showAds('ads-box',random1);
+showAds('ads-box-3',random3);
+
+
+</script>
+
+<script>
+var all = document.getElementById('all');
+var loading = document.getElementById('xloading');
+all.style.display = 'none';
+setTimeout(()=>{
+  loading.style.display='none';
+  all.style.display = 'block';
+},5000);
+
+console.log(game.length)
+</script>
+
+
+ 
+   <div style="height:200px;" ></div>
+</body>
+</html>
