@@ -1,0 +1,10 @@
+{
+  "ads":false,
+  "new_update":{
+    "visibility":false,
+    "url":".../",
+    "title":"",
+    "disc":"",
+    "cancelable":false
+  }
+}
