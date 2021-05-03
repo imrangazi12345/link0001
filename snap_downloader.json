@@ -1,5 +1,5 @@
 {
-  "ads":false,
+  "ads":true,
   "new_update":{
     "visibility":false,
     "url":".../url",
